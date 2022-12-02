@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #0f141e;
+  background-color: #f1f1f1;
+}
+
+table {
+  width: 100%;
+}
+
+table td {
+  padding-bottom: 10px;
+}
+
+table td:nth-child(2),
+table td:nth-child(3) {
+  color: #86898f;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: grey;
+}
+
+a:active {
+  color: blue;
+}
+
+.container {
+  max-width: 750px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.info {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.info__desc {
+  margin-left: 40px;
+}
+
+.avatar {
+  width: 200px;
+  border-radius: 28px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.info__desc p {
+  margin: 0;
+  font-style: italic;
+  font-weight: bold;
+  color: #86898f;
+}
+
+.info__desc h4 {
+  margin-bottom: 10px;
+}
+
+.card {
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border-radius: 20px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.list {
+  padding: 0 20px;
+}
+
+.list li {
+  color: #86898f;
+  margin-bottom: 10px;
+}
+
+.link-list {
+  padding: 0;
+  list-style: none;
+}
+
+.link-list li {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.bg-green {
+  background-color: #eafeec;
+}
+
+.bg-red {
+  background-color: #fbe7e4;
+}
+
+.bg-yellow {
+  background-color: #fef8e0;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.form__row .form__group {
+  width: 50%;
+}
+
+.form__row .form__group:not(:last-child) {
+  margin-right: 20px;
+}
+
+.form__group label {
+  display: block;
+  font-size: 14px;
+  color: #86898f;
+}
+
+.form__group input, .form__group textarea {
+  width: 100%;
+  padding: 15px 0;
+  font-family: inherit;
+  color: #000;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #ccc;
+}
+
+.btn {
+  padding: 15px 20px;
+  font-family: inherit;
+  color: #fff;
+  background-color: #111;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: .8;
+}
+
+@media (max-width: 650px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+
+  .info__desc {
+    margin-left: 0;
+    padding: 0 20px;
+  }
+
+  .form__row {
+    display: block;
+  }
+
+  .form__group {
+    margin-bottom: 20px;
+  }
+
+  .form__row .form__group {
+    width: 100%;
+    margin-right: 0;
+  }
+}
